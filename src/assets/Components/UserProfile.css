@@ -1,0 +1,31 @@
+.home-container {
+    width: 100%;
+}
+
+
+.btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: hsla(6, 57%, 45%, 0.826);
+    color: azure;
+}
+
+.btn:hover {
+    background-color: hsla(6, 50%, 77%, 0.826);
+}
+
+.btn:active {
+    background-color: hsla(6, 66%, 34%, 0.826);
+}
+
+
+.create-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}

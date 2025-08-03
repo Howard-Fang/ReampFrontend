@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.preview-big-container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color:hsl(0, 14%, 95%);
+}
+
+.property-details,
+.property-contact-details {
+    height: 15%;
+    width: 100%;
+    background-color:hsl(0, 1%, 33%);
+    color: hsl(33, 52%, 65%);
+}
+
+.city-category-container {
+    display: flex;
+    width: 100%;
+}
+
+.city-address,
+.category-price {
+    width: 50%;
+    padding: 1rem;
+    font-family: "Nunito Sans", Arial;
+    text-align: center;
+}
+
+.city-address p:first-child,
+.category-price p:first-child {
+    text-transform: uppercase;
+    font-size:30.25px;
+}
+
+.city-address p:last-child,
+.category-price p:last-child {
+    text-transform: uppercase;
+    font-size:20.25px;
+}
+
+.basic-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    font-family: "Nunito Sans", Arial;
+    font-size: 18.25px;
+}
+
+.property-description p {
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.property-contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details {
+    display: flex;
+}
+
+.contact-details p {
+    margin:auto 4rem;
+}
+
+.property-photos,
+.property-videos,
+.property-floorPlans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.property-video-item {
+    text-align: center;
+}
+
+.property-photo-img {
+    width: 300px;
+}
+
+.property-video-img {
+    width: 60%;
+    
+}

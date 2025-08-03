@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+:root {
+    --primary: hsla(160, 52%, 39%, 0.269);
+    --secondary: black;
+}
+
+.container {
+    background-color: var(--primary);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.big-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+
+}
+
+.dark {
+    --primary: black;
+    --secondary: hsla(184, 29%, 79%, 0.952);
+}
+
+.dark-mode-toggle-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    height: 30px;
+    background-color: hsla(197, 70%, 13%, 0.879);
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.welcome-container {
+    color: var(--secondary);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+    position: relative;
+}
+
+.signInContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid hsla(0, 1%, 83%, 0.683);
+    border-radius: 5px;
+    background-color: hsla(180, 60%, 99%, 0.829);
+    box-shadow: 3px 3px 9px;
+    padding-right: 18px;
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 10px;
+}
+
+.text-under-line {
+    margin-top: 20px;
+}
+
+.signInContainer-part1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text-under-signIn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.signInContainer-part3 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.signInContainer-part3 a {
+    margin-left: 5px;
+}
+
+.signInContainer-part2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.password-div {
+    position: relative;
+}
+
+.password-div i {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.sign-in-btn {
+    margin-top: 20px;
+    height: 40px;
+    background-color: hsla(196, 96%, 28%, 0.879);
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-in-btn:hover {
+    background-color: hsla(196, 82%, 38%, 0.879);
+
+}
+
+.sign-in-btn:active {
+    background: linear-gradient(to right, hsla(196, 96%, 28%, 0.879), hsla(125, 69%, 19%, 0.879));
+}
+
+#username,
+#password,
+#photographyCompanyName,
+#password1,
+#password2,
+#email {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+#phoneNumber:focus-visible {
+    outline: 3px solid hsla(196, 96%, 28%, 0.879);
+}
+
+#password:focus-visible {
+    outline: 3px solid hsla(196, 96%, 28%, 0.879);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.password-above-text-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .big-container {
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+
+    .welcome-container {
+        flex: 0;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    .signInContainer {
+        flex: 0;
+        flex-wrap: wrap;
+        max-width: 400px;
+    }
+
+    .dark-mode-toggle-btn {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+}
+
+@media only screen and (max-height: 740px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .signInContainer-part1 {
+        margin-top: 10px;
+    }
+
+    .signInContainer-part2 {
+        margin-top: 10px;
+    }
+
+    #username,
+    #password,
+    #photographyCompanyName,
+    #password1,
+    #password2,
+    #email {
+        height: 30px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .sign-in-btn {
+        height: 30px;
+    }
+
+    .signInContainer-part3 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
