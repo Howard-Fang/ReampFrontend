@@ -1,6 +1,6 @@
 import { useState } from "react"
 import apiClient from '../api/apiClient';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LOGIN_URL = 'User/Login';
 
@@ -61,7 +61,6 @@ export default function SignInContainer({ setUser }) {
                 <div className="input-container">
                     <div className="password-above-text-div">
                         <label htmlFor="password">Password</label>
-                        <a href="">Forgot?</a>
                     </div>
                     <div className="password-div">
                         <input
@@ -73,17 +72,12 @@ export default function SignInContainer({ setUser }) {
                             value={password}
                             required
                         />
-                        <i className="fa-solid fa-eye"></i>
                     </div>
-                </div>
-                <div className="checkbox-container">
-                    <input type="checkbox" name="login-checkBox" id="login-checkBox" />
-                    <label htmlFor="login-checkBox">Remember Login</label>
                 </div>
                 <button type="submit" className="sign-in-btn">Sign In</button>
             </div>
             <div className="signInContainer-part3">
-                <p>Don't have an account?<a className="sign-up-link" href="">Sign up</a></p>
+                <p>Don't have an account?<Link className="sign-up-link" to="/Register">Sign up</Link></p>
             </div>
         </form>
     )
