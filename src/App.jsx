@@ -8,7 +8,6 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import UserProfile from './assets/Components/UserProfile'
 import Register from './assets/Components/Register'
 import PreviewWebsite from './assets/Components/pages/PreviewWebsite'
-import { Navigate } from 'react-router-dom';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -46,15 +45,13 @@ function App() {
                 <WelcomeContainer />
                 <SignInContainer setUser={setUser} />
               </div> }>
-          </Route>
-          
+          </Route>          
           <Route path="/property/:id" element={<PreviewWebsite user={user} />} />
           <Route path="/home/*" element={<UserProfile user={user} />} />
           <Route path="/Register" element={<Register />} /> 
         </Routes>
       </div>
     </Router>
-
   )
 }
 
